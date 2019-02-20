@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>javascript clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans|Supermercado+One" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-content-wrapper">
+        <div class="pre-loader-bg">
+            <div class="loader">
+                <img src="./images/loader.svg" width="150px">
+                <h1>loading... </h1>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <div class="side-bar">
+                <div class="icons-wrapper">
+                    <!-- <div class="timer icon-stopwatch-1 material-icons" onclick="alertTimer()"> timer</div> TIMER COMING SOON -->
+                    
+                    <div class="settings icon-cog-2 material-icons" onclick="alertSettings()"> settings</div>
+
+                    <div class="info icon-info-circled-alt material-icons" onclick="alertInfo()"> info</div>
+                </div>
+            </div>
+
+            <div class="time-info">
+                
+                <div class="brand-name">
+                    k:d jnr
+                </div>
+
+                <div class="message">
+                    <p class="greeting">good</p>
+                    <p class="time">morning</p>
+                    <p class="name">Ninja</p>
+                </div>
+
+                <div class="time-animation">
+                    <div class="item-0"></div>
+                    <div class="sun-moon"></div>
+                    <div class="item-1"></div>
+                    <div class="item-2"></div>
+                </div>
+
+            </div>
+
+            <div class="clock-section">
+
+                <div class="clock-wrapper">
+
+                    <div class="hour-wrapper">00</div>
+                    <span>:</span>
+                    <div class="min-wrapper">00</div>
+                    <span>:</span>
+                    <div class="sec-wrapper">00</div>
+
+                </div>
+
+                <div class="date-wrapper">
+
+                    <div class="day">monday</div>
+                    <div class="date">00</div>
+                    <div class="month">February</div>
+
+                </div>
+
+            </div>
+
+        
+            <div class="css-grid-alert-overlay"></div>
+            <div class="css-grid-alert show-alert-fade">
+                <div class="pic-section"></div>
+                <div class="text-section">hey i use css grid, i might appear weird in some browsers lol its 2019 guys upgrade your browsers already XD</div>
+                <span class="icon-cancel-circled-2 material-icons">cancel</span>
+            </div>
+
+            <div class="alert-info hide-alert-fade">
+                <span class="icon-cancel-circled-2 material-icons">cancel</span>
+                <div class="alert-info-avatar"></div>
+                <div class="alert-info-name">k:d jnr</div>
+                <ul class="alert-info-list">
+                    
+                    <li> animation changes according to time</li>
+                    <li> will improve on the UI after code challenge </li>
+                    <li> add more features when the code challenge is over  </li>
+                    <li> would probably use a cool time and weather api XD</li>
+                    <li> <i>PS</i> my js is a little shaky, feel free to alert me on any bad coding practices XD  </li>
+                    <li> source code - </li>
+                </ul>
+            </div>
+
+            <div class="alert-settings">
+                <span class="icon-cancel-circled-2 material-icons">cancel</span>
+                <input type="text" maxlength="15" required placeholder="Enter Name">
+                <button onclick="changeName()"> Ok </button>
+                <div class="text">more settings coming soon</div>
+            </div>
+
+            <!-- <div class="alert-timer"> TIMER COMING SOON
+                <span class="icon-cancel-circled-2 material-icons">cancel</span>
+                <div class="timer-wrapper">
+                    <input type="number" name="hr1" min="0" max="9" value="0" >
+                    <input type="number" name="hr2" min="0" max="9" value="0" >
+                    <div>:</div>
+                    <input type="number" name="min1" min="0" max="9" value="0">
+                    <input type="number" name="min2" min="0" max="9" value="0">
+                </div>
+
+                <button class="reset" onclick="resetTimer()">reset</button>
+                <button class="start" onclick="startTimer()">start</button>
+            
+            </div> -->
+        </div>
+    </div>
+
+
+
+</body>
+<script src='script.js'></script>
+</html>
