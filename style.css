@@ -62,7 +62,7 @@
 
 .side-bar .icons-wrapper
 {
-    grid-row: 5/7;
+    grid-row: 4/8;
     color: gold;
     text-align: center;
     font-size: 23px;
@@ -319,12 +319,11 @@
 }
 
 .css-grid-alert .icon-cancel-circled-2
-{
-    grid-column: 12;
+{  
+    position: absolute;
+    top: 10px;
+    right: 6px;
     font-size: 23px;
-    grid-row: 1;
-    padding-top: 10px;
-    color: white;
     cursor: pointer;
 }
 
@@ -457,11 +456,11 @@
     font-size: 13px;
     color: rgb(7, 51, 73);
 }
-/*  TIMER COMING SOON
+
 .alert-timer
 {
     grid-row: 3/10;
-    grid-column: 4/9;
+    grid-column: 5/10;
     z-index: 2;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
@@ -472,7 +471,7 @@
     background-color: rgba(253, 114, 114,1.0);
     color: black;
     position: relative; 
-
+    
 }
 
 .alert-timer .icon-cancel-circled-2
@@ -486,29 +485,29 @@
 
 .alert-timer .timer-wrapper
 {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
+    display: flex;
     grid-row: 3/6;
     grid-column: 4/10;
-    justify-items: center;
+    align-content: center;
+    justify-content: space-around;
 }
 
-.alert-timer .timer-wrapper input
+
+.alert-timer .timer-wrapper .counters
 {
-    width: 50px;
     font-family: 'Fredoka One', cursive;
-    font-size: 20px;
+    font-size: 25px;
     border: none;
+    width: 50px;
     border-radius: 5px;
     text-align: center;
-    margin: 5px;
+    color: white;
 }
 
-.alert-timer .timer-wrapper div
+.alert-timer .timer-wrapper .divider
 {
     font-size: 20px;
     font-family: 'Fredoka One', cursive;
-    align-self: center;
 }
 
 .alert-timer .reset
@@ -518,22 +517,22 @@
     border: none;
     border-radius: 10px;
     font-family: 'Fredoka One', cursive;
-    background-color: #fff;
+    background-color: white;
     cursor: pointer;
     text-transform: capitalize;
 }
 
-.alert-timer .start
+.alert-timer .toggle
 {
     grid-row: 8/10;
-    grid-column: 8/10;
+    grid-column: 10/12;
     border: none;
     border-radius: 10px;
     font-family: 'Fredoka One', cursive;
     background-color: #fff;
     cursor: pointer;
     text-transform: capitalize;
-} */
+}
 
 /* MEDIA QUERIES GO HERE */
 

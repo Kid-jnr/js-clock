@@ -22,18 +22,18 @@
 
             <div class="side-bar">
                 <div class="icons-wrapper">
-                    <!-- <div class="timer icon-stopwatch-1 material-icons" onclick="alertTimer()"> timer</div> TIMER COMING SOON -->
+                    <div class="timer icon-stopwatch-1 material-icons" id="timer"> timer</div>
                     
-                    <div class="settings icon-cog-2 material-icons" onclick="alertSettings()"> settings</div>
+                    <div class="settings icon-cog-2 material-icons" id="settings"> settings</div>
 
-                    <div class="info icon-info-circled-alt material-icons" onclick="alertInfo()"> info</div>
+                    <div class="info icon-info-circled-alt material-icons" id="info"> info</div>
                 </div>
             </div>
 
             <div class="time-info">
                 
                 <div class="brand-name">
-                    k:d jnr
+                  k:d jnr
                 </div>
 
                 <div class="message">
@@ -92,36 +92,39 @@
                     <li> add more features when the code challenge is over  </li>
                     <li> would probably use a cool time and weather api XD</li>
                     <li> <i>PS</i> my js is a little shaky, feel free to alert me on any bad coding practices XD  </li>
-                    <li> source code - </li>
+                    <li> get source code - <a href="https://github.com/Kid-jnr/js-clock"> here</a> </li>
                 </ul>
             </div>
 
             <div class="alert-settings">
                 <span class="icon-cancel-circled-2 material-icons">cancel</span>
                 <input type="text" maxlength="15" required placeholder="Enter Name">
-                <button onclick="changeName()"> Ok </button>
+                <button> Ok </button>
                 <div class="text">more settings coming soon</div>
             </div>
 
-            <!-- <div class="alert-timer"> TIMER COMING SOON
+            <div class="alert-timer"> 
                 <span class="icon-cancel-circled-2 material-icons">cancel</span>
                 <div class="timer-wrapper">
-                    <input type="number" name="hr1" min="0" max="9" value="0" >
-                    <input type="number" name="hr2" min="0" max="9" value="0" >
-                    <div>:</div>
-                    <input type="number" name="min1" min="0" max="9" value="0">
-                    <input type="number" name="min2" min="0" max="9" value="0">
+        
+                    <div class="mins counters">00</div>
+                    <div class="divider">:</div>
+                    <div class="secs counters">00</div>
+                    <div class="divider">:</div>
+                    <div class="mill counters">00</div>
+                    
                 </div>
 
-                <button class="reset" onclick="resetTimer()">reset</button>
-                <button class="start" onclick="startTimer()">start</button>
+                <button class="reset" >reset</button>
+                <button class="toggle" >start</button>
             
-            </div> -->
+            </div>
         </div>
     </div>
 
 
 
 </body>
-<script src='script.js'></script>
+<script src='./script.js'></script>
+<script src="./timer.js"></script>
 </html>
